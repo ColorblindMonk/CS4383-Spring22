@@ -1,0 +1,23 @@
+---
+const {siteName} = Astro.props
+---
+
+<header>
+    <nav class="container flex items-center py-4 mt-0 sm:mt-12 bg-bdazzled-blue sm:rounded-md text-white">
+        <a href="/" class="py-1 flex items-center justify-between gap-4">
+            <img class="w-10" src='/assets/logo.svg' alt='Built with Astro'>
+            <h1 class="text-3xl font-bold italic">{siteName}</h1>
+        </a>
+        <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm">
+            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/">Home</a></li>
+            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/about">About</a></li>
+            <button type="button" class="bg-burnt-sienna hover:bg-light-cyan hover:text-gunmetal transition duration-100 rounded-md drop-shadow-md shadow-gunmetal px-7 py-3 uppercase">Button</button>
+        </ul>
+        <!-- Mobile Menu -->
+        <div class="flex sm:hidden flex-1 justify-end">
+            <svg class="block h-7 w-7 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </nav>
+</header>

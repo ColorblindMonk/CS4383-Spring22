@@ -1,0 +1,17 @@
+---
+const {siteName} = Astro.props;
+---
+
+<!-- Footer -->
+<section class="bg-bdazzled-blue">
+    <nav class="container block sm:flex items-center py-4 mt-0 sm:mt-12 text-white">
+        <div class="pb-3 sm:py-1 flex items-center justify-center sm:justify-between gap-4">
+            <img class="w-10" src='/assets/logo.svg' alt="">
+            <h1 class="text-3xl font-bold italic">{siteName}</h1>
+        </div>
+        <ul class="flex flex-1 justify-center sm:justify-end items-center gap-12 uppercase text-sm">
+            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/">Home</a></li>
+            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</section>
