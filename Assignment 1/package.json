@@ -9,6 +9,9 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.22.20"
+    "astro": "^0.22.20",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.22",
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }
