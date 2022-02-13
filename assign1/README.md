@@ -1,6 +1,6 @@
 # Assignment 1 - Hosting a website
 
-My first assignment satisfies the following guidelinces:
+My first assignment satisfies the following guidelines:
 
 - Host a static website in a private Amazon S3 bucket and
 - Serve the bucket within a CloudFront CDN distribution.
