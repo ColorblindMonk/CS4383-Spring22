@@ -1,5 +1,10 @@
 # Assignment 1 - Hosting a website
 
+* [Built with Astro](#built-with-astro)
+* [Installation](#installation)
+* [Project Structure](#project-structure)
+* [Commands](#commands)
+
 My first assignment satisfies the following guidelines:
 
 - Host a static website in a private Amazon S3 bucket and
