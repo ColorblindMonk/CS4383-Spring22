@@ -1,0 +1,21 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Header from '../components/Header.astro';
+import HeroSection from '../components/HeroSection.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import Footer from '../components/Footer.astro';
+
+let title = 'My First Astro Site';
+let siteName = 'Simple Site';
+---
+
+<HomeLayout title={title}>
+	<Header siteName={siteName} />
+
+	<HeroSection />
+
+	<FeatureGrid />
+
+	<Footer siteName={siteName} />
+	
+</HomeLayout>

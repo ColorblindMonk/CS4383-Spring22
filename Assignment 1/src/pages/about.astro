@@ -1,0 +1,26 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+let title = 'About';
+let siteName = 'Simple Site';
+---
+
+<HomeLayout title={title}>
+	<Header siteName={siteName} />
+	<div class="container mt-12">
+		<article>
+			<h1 class="text-3xl">About</h1>
+			<p class="text-sm md:text-base font-normal text-gray-600">A simple website by <span class="text-gray-500">Kyle Hitchcock</span></p>
+		</article>
+		<!-- The Content -->
+		<p class="my-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius delectus sed sequi excepturi expedita dignissimos, repellat in unde illo vel iure nihil ullam, animi architecto id nemo? Doloremque, laborum?</p>
+		<img class="max-w-md mx-auto" src="/assets/speed.webp" title="speed" alt="speed">
+		<p class="text-center mx-auto">Speed</p>
+		<p class="my-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<Footer siteName={siteName} />
+	
+</HomeLayout>
