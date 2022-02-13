@@ -14,7 +14,8 @@ module.exports = {
             },
         },
         fontFamily: {
-            poppins: ["Poppins, sans-serif"],
+            roboto: ['Roboto, sans-serif'],
+            righteous: ['Righteous, sans-serif']
         },
         container: {
             center: true,
