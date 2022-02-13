@@ -16,7 +16,7 @@ From the root of this project, use `npm install` from a terminal to import depen
 ## Project Structure
 
 ```
-Assignment 1/
+assign1/
 ├── public/
 ├── src/
 │   ├── components/
