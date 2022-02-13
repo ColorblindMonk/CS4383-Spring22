@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply drop-shadow-md py-3 px-7 rounded-md transition duration-300;
+}
+
+.btn-filled {
+    @apply bg-bdazzled-blue text-white;
+}
+
+.btn-outline {
+    @apply bg-white;
+}
