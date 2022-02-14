@@ -10,15 +10,15 @@ let siteName = 'Simple Site';
 <HomeLayout title={title}>
 	<Header siteName={siteName} />
 	<div class="container mt-12">
-		<article>
-			<h1 class="text-3xl">About</h1>
-			<p class="text-sm md:text-base font-normal text-gray-600">A simple website by <span class="text-gray-500">Kyle Hitchcock</span></p>
+		<article class="w-full lg:w-3/4 xl:w-2/3 mx-auto leading-6">
+			<h1 class="text-3xl capitalize">About what I do, and why I want to get out of it</h1>
+			<p class="text-sm md:text-base font-normal text-gray-600">By <span class="text-gray-500">Kyle Hitchcock</span></p>
+			<!-- The Content -->
+			<p class="my-7">I'm a WordPress developer of 6 years, including some work on custom themes and plugins for a wide range of clients of different industries. One particular trend that stuck out of nearly every project is one that's been the souce of frustration out of all WordPress sites I've built:</p>
+			<img class="max-w-md mx-auto" src="/assets/speed.webp" title="speed" alt="speed">
+			<p class="text-center mx-auto">Speed</p>
+			<p class="my-7">WordPress really knows how to make a fast server-side language like PHP feel sluggish, even when paying out for a premium caching plugin. My goal is to pick up on a new set of tools so that I can build websites and web apps that deliver on performance.</p>
 		</article>
-		<!-- The Content -->
-		<p class="my-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius delectus sed sequi excepturi expedita dignissimos, repellat in unde illo vel iure nihil ullam, animi architecto id nemo? Doloremque, laborum?</p>
-		<img class="max-w-md mx-auto" src="/assets/speed.webp" title="speed" alt="speed">
-		<p class="text-center mx-auto">Speed</p>
-		<p class="my-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 
 	<Footer siteName={siteName} />
