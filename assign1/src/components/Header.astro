@@ -9,8 +9,8 @@ const {siteName} = Astro.props
             <h1 class="text-3xl font-bold italic">{siteName}</h1>
         </a>
         <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm">
-            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/">Home</a></li>
-            <li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-sm cursor-pointer"><a href="/about">About</a></li>
+            <a href="/"><li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-md cursor-pointer">Home</li></a>
+            <a href="/about"><li class="p-2 hover:bg-gunmetal hover:bg-opacity-40 rounded-md cursor-pointer">About</li></a>
             <button type="button" class="bg-burnt-sienna hover:bg-light-cyan hover:text-gunmetal transition duration-100 rounded-md drop-shadow-md shadow-gunmetal px-7 py-3 uppercase">Button</button>
         </ul>
         <!-- Mobile Menu -->

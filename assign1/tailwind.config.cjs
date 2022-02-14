@@ -6,16 +6,16 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'bdazzled-blue': '#3D5A80',
-                'darksky-blue': '#98C1D9',
-                'light-cyan': '#E0FBFC',
-                'gunmetal': '#293241',
-                'burnt-sienna': '#EE6C4D',
+                'bdazzled-blue':    '#3D5A80',
+                'darksky-blue':     '#98C1D9',
+                'light-cyan':       '#E0FBFC',
+                'gunmetal':         '#293241',
+                'burnt-sienna':     '#EE6C4D',
             },
         },
         fontFamily: {
-            roboto: ['Roboto, sans-serif'],
-            righteous: ['Righteous, sans-serif']
+            roboto:     ['Roboto, sans-serif'],
+            righteous:  ['Righteous, sans-serif']
         },
         container: {
             center: true,
