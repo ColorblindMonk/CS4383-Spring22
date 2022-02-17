@@ -24,5 +24,7 @@ module.exports = {
     },
     plugins: [
         require('tailwindcss-textshadow'),
+        require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/forms'),
     ]
 };

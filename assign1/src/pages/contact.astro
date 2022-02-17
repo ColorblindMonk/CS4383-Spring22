@@ -1,0 +1,21 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Form from '../components/Form.astro';
+
+let title = 'About';
+let siteName = 'Simple Site';
+---
+
+<HomeLayout title={title}>
+	<Header siteName={siteName} />
+	<div class="container mt-12">
+		<h1 class="text-3xl capitalize">Contact</h1>
+		<h2 class="mb-8 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+		<Form />
+	</div>
+
+	<Footer siteName={siteName} />
+	
+</HomeLayout>

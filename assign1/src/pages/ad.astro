@@ -1,0 +1,24 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+let title = 'Ad';
+let siteName = 'Simple Site';
+---
+
+<HomeLayout title={title}>
+	<Header siteName={siteName} />
+	<div class="container mt-12">
+		<article class="w-full lg:w-3/4 xl:w-2/3 mx-auto leading-6">
+			<!-- The Content -->
+			<h1 class="text-3xl capitalize">Trunk Monkey Ad</h1>
+			<div class="my-7 aspect-w-16 aspect-h-9">
+				<iframe width="560" src="https://www.youtube.com/embed/AidAXgq9dWc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</article>
+	</div>
+
+	<Footer siteName={siteName} />
+	
+</HomeLayout>

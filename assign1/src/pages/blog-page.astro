@@ -1,0 +1,25 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+let title = 'Blog Page';
+let siteName = 'Simple Site';
+---
+
+<HomeLayout title={title}>
+	<Header siteName={siteName} />
+	<div class="container mt-12">
+		<article class="w-full lg:w-3/4 xl:w-2/3 mx-auto leading-6">
+			<h1 class="text-3xl capitalize">Blog Post</h1>
+			<p class="text-sm md:text-base font-normal text-gray-600">By <span class="text-gray-500">Kyle Hitchcock</span></p>
+			<!-- The Content -->
+			<p class="my-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Mauris a diam maecenas sed enim ut sem viverra. Duis at consectetur lorem donec massa sapien faucibus et molestie. In dictum non consectetur a. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Tortor dignissim convallis aenean et tortor at. Euismod lacinia at quis risus sed vulputate. Sagittis purus sit amet volutpat consequat mauris. Facilisi nullam vehicula ipsum a arcu cursus vitae. Tellus in metus vulputate eu scelerisque felis imperdiet. Molestie ac feugiat sed lectus. Porta nibh venenatis cras sed. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Sit amet cursus sit amet dictum sit amet justo donec. Pellentesque dignissim enim sit amet venenatis urna cursus. Nec ultrices dui sapien eget mi proin. Scelerisque purus semper eget duis at tellus at urna. Diam ut venenatis tellus in metus. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui.</p>
+			<p class="my-7">Vestibulum lorem sed risus ultricies tristique. Magna fermentum iaculis eu non diam. Tincidunt eget nullam non nisi est sit. Laoreet suspendisse interdum consectetur libero. Viverra aliquet eget sit amet tellus. Augue lacus viverra vitae congue eu consequat ac. Libero justo laoreet sit amet cursus sit. Tristique risus nec feugiat in fermentum posuere. Fermentum et sollicitudin ac orci phasellus egestas tellus. Sit amet facilisis magna etiam tempor. Augue mauris augue neque gravida in. Netus et malesuada fames ac turpis egestas integer. Sagittis aliquam malesuada bibendum arcu. Sit amet dictum sit amet. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Egestas congue quisque egestas diam. Iaculis urna id volutpat lacus laoreet non. Tincidunt ornare massa eget egestas purus. Vivamus at augue eget arcu dictum varius duis at.</p>
+			<p class="my-7">Leo a diam sollicitudin tempor id eu nisl nunc mi. Id volutpat lacus laoreet non curabitur gravida arcu ac. Morbi tempus iaculis urna id volutpat lacus laoreet non. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Egestas integer eget aliquet nibh praesent tristique. Sed risus ultricies tristique nulla aliquet enim tortor. Est placerat in egestas erat imperdiet. Id donec ultrices tincidunt arcu non sodales neque sodales. Bibendum ut tristique et egestas. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Leo vel orci porta non pulvinar neque. Vitae proin sagittis nisl rhoncus mattis rhoncus. Arcu cursus vitae congue mauris. Quam vulputate dignissim suspendisse in. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.</p>
+		</article>
+	</div>
+
+	<Footer siteName={siteName} />
+	
+</HomeLayout>
