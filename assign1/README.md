@@ -1,14 +1,22 @@
-# Assignment 1 - Hosting a website
+# Assignment 1 - Hosting a website on Amazon CloudFront
 
 * [Built with Astro](#built-with-astro)
 * [Installation](#installation)
 * [Project Structure](#project-structure)
 * [Commands](#commands)
 
+## Requirements
+
 My first assignment satisfies the following guidelines:
 
 - Host a static website in a private Amazon S3 bucket and
 - Serve the bucket within a CloudFront CDN distribution.
+
+## Description of Solution
+
+The Amazon S3 bucket was created to store the static site with initial permissions set to block all public access. A CloudFront distribution was then created with an IAM policy set up so that only the CloudFront distrubution has private access to the bucket.
+
+Cloudfront URL: dzhuta41rrmvw.cloudfront.net
 
 ## Built with [Astro](https://astro.build)
 
