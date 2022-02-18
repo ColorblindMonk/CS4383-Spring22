@@ -1,5 +1,7 @@
 # Assignment 1 - Hosting a website on Amazon CloudFront
 
+* [Requirements](#requirements)
+* [Description of Solution](#description-of-solution)
 * [Built with Astro](#built-with-astro)
 * [Installation](#installation)
 * [Project Structure](#project-structure)
