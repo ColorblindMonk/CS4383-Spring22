@@ -18,7 +18,7 @@ My first assignment satisfies the following guidelines:
 
 The Amazon S3 bucket was created to store the static site with initial permissions set to block all public access. A CloudFront distribution was then created with an IAM policy set up so that only the CloudFront distrubution has private access to the bucket.
 
-Cloudfront URL: dzhuta41rrmvw.cloudfront.net
+Cloudfront URL: [dzhuta41rrmvw.cloudfront.net](http://dzhuta41rrmvw.cloudfront.net/)
 
 ## Built with [Astro](https://astro.build)
 
