@@ -16,7 +16,7 @@ My first assignment satisfies the following guidelines:
 
 # Description of Solution
 
-The Amazon S3 bucket was created to store the static site with initial permissions set to block all public access. A CloudFront distribution was then created with an IAM policy set up so that only the CloudFront distrubution has private access to the bucket.
+The static files (HTML/CSS/JS) were uploaded to an Amazon S3 bucket with initial permissions set to block all public access. A CloudFront distribution was then created with an IAM policy set up on the bucket so that only the CloudFront distrubution has private access to the bucket.
 
 Cloudfront URL: [dzhuta41rrmvw.cloudfront.net](http://dzhuta41rrmvw.cloudfront.net/)
 
