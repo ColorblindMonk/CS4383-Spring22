@@ -14,7 +14,7 @@ My first assignment satisfies the following guidelines:
 - Host a static website in a private Amazon S3 bucket and
 - Serve the bucket within a CloudFront CDN distribution.
 
-## Description of Solution
+# Description of Solution
 
 The Amazon S3 bucket was created to store the static site with initial permissions set to block all public access. A CloudFront distribution was then created with an IAM policy set up so that only the CloudFront distrubution has private access to the bucket.
 
