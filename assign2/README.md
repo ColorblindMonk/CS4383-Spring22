@@ -19,7 +19,11 @@ The setup was created on the us-east-2 (Ohio) availability zone.
 
 ## The Network
 
-The core components of the network consists of a VPC containing two public and private subnets residing in different availability zones. Each public subnet contains a NAT Gateway with an Elastic IP assigned, which will route traffic into a corresponding private subnet.
+The core components of the network consists of a VPC containing two public and private subnets residing in different availability zones. Each public subnet contains a NAT Gateway with an Elastic IP assigned, which will route traffic into the corresponding private subnet in its availability zone. Each subnet has a block of CIDR addresses reserved:
+- Public Subnet 1: `10.0.0.0/24`
+- Public Subnet 2: `10.0.1.0/24`
+- Private Subnet 1: `10.0.2.0/24`
+- Private Subnet 2: `10.0.3.0/24`
 
 ## The Servers
 
