@@ -23,16 +23,18 @@ The core components of the network consists of a VPC containing two public and p
 
 ## The Servers
 
-An Auto Scaling Group will generate a minimum of two EC2 (t3.micro) instances of the web application that reside in the private subnet. The web application will be accessible via the NAT Gateway routing traffic through the public subnet. A load balancer is placed between the internet gateway and public NAT Gateways that will listen for traffic and determine which avaiability zone to send requests to.
+An Auto Scaling Group will generate a minimum of two EC2 (t3.micro) instances of the web application that reside in the private subnet, each loaded with the default Apache configurations. The web application will be accessible via the NAT Gateway routing traffic through the public subnet. A load balancer is placed between the internet gateway and public NAT Gateways that will listen for traffic and determine which avaiability zone to send requests to.
 
 The web application can be reached via the following public link:
 WebSe-WebAp-AUA4FYRBR69F-1482301780.us-east-2.elb.amazonaws.com
 
-The databases are individually set up as EC2 instances, however, but do not have the same setup, as they should no be able to be pinged from the public internet like the web servers. Ideally, they should only be referenced by the web server within the same private subnet.
+The MySQL databases are individually set up as EC2 instances, however, but do not have the same setup, as they should no be able to be pinged from the public internet like the web servers. Ideally, they should only be referenced by the web server within the same private subnet.
 
 ## Issues during setup
 
 I have come across issues specific to my account that limits me on the number vCPUs that can be active at one time. I have been able to verify that server and database setups are correctly generated, but due to aforementioned issues, I was not able to have both web and database servers up simultaneously at the time of submission.
+
+I have also experienced a scenario where a stack fails to delete after initializing a request, which I had recieved assistance from the professor to correct. In manually deleting a stack, I had learned that resources created in CloudFormation must be deleted in the reverse order which they were created; I could not remove my network stack before I remove my web server stack, for example.
 
 # Current Challenges
 
