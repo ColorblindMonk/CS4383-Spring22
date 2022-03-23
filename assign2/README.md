@@ -29,10 +29,7 @@ The core components of the network consists of a VPC containing two public and p
 
 ## The Servers
 
-An Auto Scaling Group will generate a minimum of two EC2 (t3.micro) instances of the web application that reside in the private subnet. Each server has a configured firewall to only allow connections through ports 22 (SSH) and 80 (HTTP) with a Apache configuration installed. The web application will be accessible via the NAT Gateway routing traffic through the public subnet. A load balancer is placed between the internet gateway and public NAT Gateways that will listen for traffic and determine which avaiability zone to send requests to.
-
-The web application can be reached via the following public link:
-[WebSe-WebAp-AUA4FYRBR69F-1482301780.us-east-2.elb.amazonaws.com](http://WebSe-WebAp-AUA4FYRBR69F-1482301780.us-east-2.elb.amazonaws.com)
+An Auto Scaling Group will generate a minimum of two EC2 (t3.micro) instances of the web application using the standard free tier Amazon Linux 2 AMI that resides in the private subnet. Each server has a configured firewall to only allow connections through ports 22 (SSH) and 80 (HTTP) with a Apache configuration installed. The web application will be accessible via the NAT Gateway routing traffic through the public subnet. A load balancer is placed between the internet gateway and public NAT Gateways that will listen for traffic and determine which avaiability zone to send requests to.
 
 The MySQL databases are individually set up as EC2 instances with similar firewall configurations to account for port 3306 (MySQL) connections, however differ in that they can't be accessed publically, as they should no be able to be pinged from the public internet; ideally, they should only be referenced by the web server within the private subnet.
 
